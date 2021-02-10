@@ -1,5 +1,5 @@
 ## Nadpis 2
-https://www.edaplayground.com/x/fPsT
+https://www.edaplayground.com/x/E8RC
 
 #### De Morgan's laws simulation
 ```vhdl
