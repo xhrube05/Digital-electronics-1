@@ -7,8 +7,8 @@
 2. dfg
 
 **Links**
-[
-Odkaz na google](https://www.google.com "Google's Homepage")
+
+[Odkaz na google](https://www.google.com "Google's Homepage")
 
 **Source code**
 
