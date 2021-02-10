@@ -1,4 +1,6 @@
 ## 1. cvičení
+https://github.com/xhrube05/Digital-electronics-1
+## 2. cvičení
 ### De Morgan's laws simulation
 #### VHDL code
 ```vhdl
