@@ -29,3 +29,6 @@ https://www.edaplayground.com/x/E8RC
 | 1 | 0 | 1 | 1 | 1 | 0 |
 | 1 | 1 | 0 | 0 | 1 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
+
+## 3. cvičení
+### Distributive laws
