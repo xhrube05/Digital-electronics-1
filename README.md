@@ -10,8 +10,7 @@
 [Odkaz na google](https://www.google.com "Google's Homepage")
 
 **Images**
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://www.popsockets.com/dw/image/v2/BDFW_PRD/on/demandware.static/-/Sites-popsockets-master-catalog/default/dw829cd078/images/hi-res/Pusheen-Ramen-Gloss_01_Top-View.png?sw=800&sh=800 "Pusheen")
 
 **Source code**
 
