@@ -7,10 +7,10 @@
 2. dfgsgfd
 
 **Links**
-[Odkaz na google:](https://www.google.com)
+[Odkaz na google](https://www.google.com)
 
 **Images**
-![Pusheen](https://pusheen.com/wp-content/themes/pusheen-custom/img/about-pusheen.png)
+[Pusheen](https://pusheen.com/wp-content/themes/pusheen-custom/img/about-pusheen.png)
 
 **Tables**
 First Header | Second Header
