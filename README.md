@@ -7,7 +7,7 @@
 2. dfg
 
 **Links**
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
+[Odkaz na google](https://www.google.com "Google's Homepage")
 
 **Source code**
 
