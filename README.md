@@ -16,7 +16,7 @@
 First Header | Second Header
 ------------ | -------------
 neco | neco 2
-Content in the first column | Content in the second column
+asfasf | asdfasf 2
 
 **Source code**
 
