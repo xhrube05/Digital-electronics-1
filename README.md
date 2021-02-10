@@ -2,11 +2,12 @@
 
 ## Labs
 
-## List
-
+**List**
 1. dfg
 2. dfg
-..* sfsdf
+
+**Links**
+[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 
 **Source code**
 
