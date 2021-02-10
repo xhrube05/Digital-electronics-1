@@ -14,3 +14,14 @@ end architecture dataflow;
 ![Simulace De Morgan's laws](Images/demorganslawsimulation.png)
 #### EDA playground link
 https://www.edaplayground.com/x/E8RC
+#### Table
+| **c** | **b** |**a** | **f(c,b,a)** | **fnand(c,b,a)** | **fnor(c,b,a)** |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 0 | 0 | 0 |  |  |  |
+| 0 | 0 | 1 |  |  |  |
+| 0 | 1 | 0 |  |  |  |
+| 0 | 1 | 1 |  |  |  |
+| 1 | 0 | 0 |  |  |  |
+| 1 | 0 | 1 |  |  |  |
+| 1 | 1 | 0 |  |  |  |
+| 1 | 1 | 1 |  |  |  |
