@@ -1,7 +1,6 @@
-## Nadpis 2
-https://www.edaplayground.com/x/E8RC
-
-#### De Morgan's laws simulation
+## 1. cvičení
+### De Morgan's laws simulation
+#### VHDL code
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -11,4 +10,7 @@ begin
 
 end architecture dataflow;
 ```
+#### Screenshot
 ![Simulace De Morgan's laws](Images/demorganslawsimulation.png)
+#### EDA playground link
+https://www.edaplayground.com/x/E8RC
