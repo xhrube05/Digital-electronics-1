@@ -15,7 +15,7 @@ end architecture dataflow;
 ### Screenshot
 ![Simulace De Morgan's laws](Images/demorganslawsimulation.png)
 ### EDA playground link
-https://www.edaplayground.com/x/E8RC
+https://www.edaplayground.com/x/Bx5U
 ### Table
 | **c** | **b** |**a** | **f(c,b,a)** | 
 | :-: | :-: | :-: | :-: | 
