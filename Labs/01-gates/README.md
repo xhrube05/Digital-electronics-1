@@ -1,10 +1,8 @@
-## 1. cvičení
-### GitHub link
+## 1. GitHub link
 https://github.com/xhrube05/Digital-electronics-1
 
-## 2. cvičení
-### De Morgan's laws simulation
-#### VHDL code
+## 2. De Morgan's laws simulation
+### VHDL code
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -14,11 +12,11 @@ begin
 
 end architecture dataflow;
 ```
-#### Screenshot
+### Screenshot
 ![Simulace De Morgan's laws](Images/demorganslawsimulation.png)
-#### EDA playground link
+### EDA playground link
 https://www.edaplayground.com/x/E8RC
-#### Table
+### Table
 | **c** | **b** |**a** | **f(c,b,a)** | **fnand(c,b,a)** | **fnor(c,b,a)** |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 | 1 | 1 |
@@ -30,5 +28,4 @@ https://www.edaplayground.com/x/E8RC
 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 1 | 1 | 1 | 0 | 0 | 0 |
 
-## 3. cvičení
-### Distributive laws
+## 3. Distributive laws
