@@ -30,8 +30,7 @@
 #### B is less than A
 ![Less](Images/less.png)
 ### SoP and PoS function
-![PoS](Images/pos.png)
-[SoP](Images/sop.png)
+![PoS](Images/pos.png) ![SoP](Images/sop.png)
 ![PoS and SoP](Images/possop.png)
 ### Link to your public EDA Playground
 
