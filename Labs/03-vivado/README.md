@@ -65,16 +65,32 @@ p_stimulus : process
 ![waveforms](Images/waveforms.png)
 
 ## 3. A vivado tutorial
+### New project
+1. create new project
 ![tutorial](Images/1.png)
+2. next
 ![tutorial](Images/2.png)
+3. project name -> next
 ![tutorial](Images/3.png)
+4. check RTL Project -> next
 ![tutorial](Images/4.png)
+5. create file -> file type = VHDL -> file name -> ok -> next
 ![tutorial](Images/5.png)
+6. next
 ![tutorial](Images/6.png)
+7. click on boards -> find and click on *nexys a7-50t* -> <b>next</b>
 ![tutorial](Images/7.png)
+8. finish
 ![tutorial](Images/8.png)
+9. wait, then ok
 ![tutorial](Images/9.png)
+
+### New simulation source
+1. file -> add sources... / or just alt+a
 ![tutorial](Images/10.png)
+3. add or create simulation sources -> next
 ![tutorial](Images/11.png)
+4. create file -> file type = VHDL -> tb_projectname -> ok -> finish
 ![tutorial](Images/12.png)
+5. done
 ![tutorial](Images/13.png)
