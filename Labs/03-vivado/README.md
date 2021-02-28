@@ -94,7 +94,7 @@ p_stimulus : process
 ![tutorial](Images/9.png)
 
 ### New simulation source
-1. <b>file</b> -> <b>add sources...</b> / or just <b>alt+a</b> <hr><br>
+1. <b>file</b> -> <b>add sources...</b> / or just <b>alt+a</b><hr>
 ![tutorial](Images/10.png)
 
 3. <b>add or create simulation sources</b> -> <b>next</b>
