@@ -62,6 +62,19 @@ p_stimulus : process
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
-![Screenshot](Images/waveforms.png)
+![waveforms](Images/waveforms.png)
 
 ## 3. A vivado tutorial
+![tutorial](Images/1.png)
+![tutorial](Images/2.png)
+![tutorial](Images/3.png)
+![tutorial](Images/4.png)
+![tutorial](Images/5.png)
+![tutorial](Images/6.png)
+![tutorial](Images/7.png)
+![tutorial](Images/8.png)
+![tutorial](Images/9.png)
+![tutorial](Images/10.png)
+![tutorial](Images/11.png)
+![tutorial](Images/12.png)
+![tutorial](Images/13.png)
