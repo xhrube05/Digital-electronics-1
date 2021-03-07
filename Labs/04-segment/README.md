@@ -67,7 +67,8 @@ begin
       
 end Behavioral;
 ```
-### VHDL stimulus process (`tb_hex_7seg.vhd`)
+### VHDL stimulus process (`tb_hex_7seg.vhd`) 
+```vhdl
 p_stimulus : process
 begin
     report "Stimulus process started" severity note;
@@ -93,7 +94,6 @@ begin
         wait;
     
     end process p_stimulus;
-```vhdl
 ```
 ### Screenshot with simulated time waveforms
 ### VHDL code (`top.vhd`)
