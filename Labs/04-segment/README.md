@@ -95,6 +95,7 @@ begin
     end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
+![7-segment display waveforms](Images/7segwf.png)
 ### VHDL code (`top.vhd`)
 ```vhdl
 ```
