@@ -1,5 +1,5 @@
 ## 1. Preparation tasks
-### Screenshot with simulated time waveforms
+### Figure or table with connection of 7-segment displays on Nexys A7 board:
 ![7-segment display](Images/7segdisplay.png)
 ### Decoder truth table for common anode 7-segment display
 | Hex | Inputs | A | B | C | D | E | F | G |
