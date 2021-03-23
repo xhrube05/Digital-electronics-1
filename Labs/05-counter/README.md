@@ -95,11 +95,9 @@ entity top is
     Port ( 
            CLK100MHZ : in STD_LOGIC;
            BTNC      : in STD_LOGIC;
-           BTNL      : in STD_LOGIC;
-           BTNR      : in STD_LOGIC;
            
-           SW        : in STD_LOGIC_VECTOR (2-1 downto 0);
-           LED       : out STD_LOGIC_VECTOR (16-1 downto 0);
+           SW        : in STD_LOGIC_VECTOR (1-1 downto 0);
+           LED       : out STD_LOGIC_VECTOR (4-1 downto 0);
            
            CA        : out STD_LOGIC;
            CB        : out STD_LOGIC;
@@ -121,11 +119,6 @@ architecture Behavioral of top is
     signal s_en  : std_logic;
     -- Internal counter
     signal s_cnt : std_logic_vector(4-1 downto 0);
-    
-    -- 16
-    signal s_en16  : std_logic;
-    -- Internal counter
-    signal s_cnt16 : std_logic_vector(16-1 downto 0);
 
 begin
 
@@ -153,36 +146,14 @@ begin
         port map(
             --- WRITE YOUR CODE HERE
             clk      =>  CLK100MHZ,
-            reset    =>  BTNL,
+            reset    =>  BTNC,
             en_i     =>  s_en,
             cnt_up_i =>  SW(0),
             cnt_o    =>  s_cnt
         );
 
-    -- 16 bit counter
-    clk_en_16 : entity work.clock_enable
-        generic map(
-            g_MAX   =>  1000000
-        )        
-        port map(
-            clk     =>  CLK100MHZ,
-            reset   =>  BTNC,
-            ce_o    =>  s_en16
-        );
-    bin_cnt_16 : entity work.cnt_up_down
-        generic map(
-            g_CNT_WIDTH =>  16
-        )
-        port map(
-            clk         =>  CLK100MHZ,
-            reset       =>  BTNR,
-            en_i        =>  s_en16,
-            cnt_up_i    =>  SW(1),
-            cnt_o       =>  s_cnt16
-        );
-
     -- Display input value on LEDs
-    LED(16-1 downto 0) <= s_cnt16;
+    LED(3 downto 0) <= s_cnt;
 
     --------------------------------------------------------------------
     -- Instance (copy) of hex_7seg entity
@@ -204,5 +175,4 @@ begin
 end architecture Behavioral;
 ```
 ### Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter
-#### Schema in vivado (RTL Analysis)
 ![schema](Images/schema.png)
