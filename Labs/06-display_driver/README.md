@@ -241,6 +241,7 @@ begin
 
 end architecture Behavioral;
 ```
-  
-### Eight-digit driver
+
+## 3. Eight-digit driver
+### Image of the driver schematic
 ![schema](Images/doodles.png)
