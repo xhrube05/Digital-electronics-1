@@ -284,21 +284,122 @@ end process p_d_latch;
 ### Screenshot with simulated time waveforms
 ![waveforms](Images/d_ff_rst.png)
   
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 ### VHDL code listing of the processes (`p_jk_ff_rst`)
 ```vhdl
+architecture Behavioral of jk_ff_rst is
+    signal  s_q     : STD_LOGIC;
+    signal  s_q_bar : STD_LOGIC;
+begin
+    p_jk_ff_rst : process (clk)
+    begin                                                              
+        if rising_edge(clk) then
+            if (rst = '1') then
+              s_q     <= '0';
+              s_q_bar <= '1';
+            else
+            if (j = '0' and k = '0') then
+                s_q     <= s_q;
+                s_q_bar <= s_q_bar;
+            elsif (j = '0' and k = '1') then
+                s_q     <= '0';
+                s_q_bar <= '1';
+            elsif (j = '1' and k = '0') then
+                s_q     <= '1';
+                s_q_bar <= '0';
+            else
+                s_q     <= not s_q;
+                s_q_bar <= not s_q_bar;
+            end if;       
+          end if;  
+        end if;                                                     
+    end process p_jk_ff_rst;
+    
+    q       <=  s_q;
+    q_bar   <=  s_q_bar;
+end Behavioral;
 ```
 ### Listing of VHDL clock, reset and stimulus processes from the testbench
 ```vhdl
+    -- clock
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop         
+            s_clk_100MHz <= '0';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+            s_clk_100MHz <= '1';
+            wait for c_CLK_100MHZ_PERIOD / 2;
+        end loop;
+        wait;                           
+    end process p_clk_gen;
+    
+    -- reset
+    p_reset_gen : process 
+    begin
+        s_rst <= '0';
+        wait for 28 ns;
+        s_rst <= '1';
+        wait for 13 ns;
+        s_rst <= '0';                
+        wait;
+    end process p_reset_gen;
+    
+    -- stimulus
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+        
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_j <= '0';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+        
+        s_j <= '1';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+       
+        s_j <= '0';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;  
+        
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '0' and s_q_bar = '1')
+        report "Error" severity note;
+        
+        s_j <= '1';
+        s_k <= '1';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+        
+        s_j <= '0';
+        s_k <= '0';
+        wait for 10ns;
+        assert (s_q = '1' and s_q_bar = '0')
+        report "Error" severity note;
+ 
+        report "Stimulus process finished" severity note;
+                
+        wait;
+    end process p_stimulus;
 ```
 ### Screenshot with simulated time waveforms
 ![waveforms](Images/jk_ff_rst.png)
